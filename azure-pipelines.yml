@@ -17,7 +17,7 @@ steps:
 - task: AzureCLI@2
   displayName: 'Azure CLI'
   inputs:
-    azureSubscription: '$(SUBSCRIPTION_NAME)'
+    azureSubscription: 'DevTestServiceConnection'
     addSpnToEnvironment: true
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
